@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<strong>i had good day </strong>
+<h1>basic html</h1>
+    <p>hyper text markup language ,<br> used to create and structure content on the web</p>                       
+    <h2>basic css</h2>
+    <p>cascading style sheets,is a language uswd to describe the presention of a doucment </p>
+    <h3>basic javascript</h3>
+    <p>javascript is versatile, high- level , interpreted programming language primarily known for enabling interactive and dyanic conetent on webistes </p>
+    <h1>the river speaks</h1>
+    <p>are you braven enoungh <Br> to discover the corners <br>where you hid your dreams</p>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+</body>
+</html>
