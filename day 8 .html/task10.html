@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clean layout where all boxes use box-sizing: border-box for uniform sizing</title>
+    <style>
+        .border-box{
+            width: 200px;
+            height: auto;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px;
+            background-color: lightyellow;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .border-box1{
+            width: 200px;
+            height: auto;
+            padding: 20px;
+            border: 5px solid blue;
+            margin: 20px;
+            background-color: lightcoral;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+        .border-box2{
+            width: 200px;
+            height: auto;
+            padding: 20px;
+            border: 5px solid green;
+            margin: 20px;
+            background-color: lightgreen;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing Table</h1>
+    <div class="border-box">
+        <h3>Basic</h3>
+        <p>10rs/month</p>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <button>Select</button>
+    </div>
+    <div class="border-box1">        
+        <h3>Pro</h3>
+        <p>25rs/month</p>
+        <ul>
+            <li>Feature A</li>
+            <li>Feature B</li>
+            <li>Feature C</li>
+        </ul>
+        <button>Select</button>
+    </div>
+    <div class="border-box2">
+        <h3>Enterprise</h3>
+        <p>50rs/month</p>
+        <ul>
+            <li>All Features</li>
+            <li>Priority Support</li>
+            <li>Custom Solutions</li>
+        </ul>
+        <button>Select</button>
+    </div>
+    
+</body>
+</html>
