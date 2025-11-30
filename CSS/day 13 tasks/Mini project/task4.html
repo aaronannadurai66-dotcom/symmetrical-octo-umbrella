@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 70px 1fr;
+            grid-template-areas:
+                "sidebar topbar"
+                "sidebar main";
+        }
+
+        
+        .sidebar {
+            grid-area: sidebar;
+            background: #1e1e2f;
+            color: white;
+            padding: 25px 15px;
+        }
+
+        .sidebar h2 {
+            margin: 0 0 20px;
+            font-size: 22px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px 0;
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: white;
+        }
+
+        
+        .topbar {
+            grid-area: topbar;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .topbar input {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        
+        .main {
+            grid-area: main;
+            background: #f5f6fa;
+            padding: 25px;
+            overflow-y: auto;
+        }
+
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            font-size: 18px;
+            text-align: center;
+        }
+
+      
+        .content-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        }
+
+        
+        @media (max-width: 750px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: 70px auto;
+                grid-template-areas:
+                    "topbar"
+                    "main";
+            }
+            .sidebar {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#">Overview</a>
+        <a href="#">Users</a>
+        <a href="#">Reports</a>
+        <a href="#">Settings</a>
+    </div>
+
+    
+    <div class="topbar">
+        <h3>Welcome Admin</h3>
+        <input type="text" placeholder="Search...">
+    </div>
+
+    
+    <div class="main">
+
+        
+        <div class="stats">
+            <div class="stat-card">Users: 1520</div>
+            <div class="stat-card">Sales: Rs.12,430</div>
+            <div class="stat-card">Orders: 320</div>
+            <div class="stat-card">Growth: +12%</div>
+        </div>
+
+        
+        <div class="content-box">
+            <h2>Main Content</h2>
+            <p>
+                This is the main content area of the dashboard.  
+                You can place charts, tables, reports, modules, or analytics here.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
