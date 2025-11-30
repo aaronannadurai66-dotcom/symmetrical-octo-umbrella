@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e6e6e6;
+        }
+
+        .chat-container {
+            width: 350px;
+            height: 550px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        /* Chat messages area */
+        .messages {
+            flex: 1;
+            display: flex;
+            flex-direction: column-reverse; /* newest at bottom */
+            overflow-y: auto;
+            padding: 15px;
+            gap: 10px;
+        }
+
+        .msg {
+            max-width: 75%;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .me {
+            background: #007bff;
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 0;
+        }
+
+        .other {
+            background: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 0;
+        }
+
+        /* Input area */
+        .input-area {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: flex;
+            gap: 10px;
+            background: #fafafa;
+        }
+
+        .input-area input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .input-area button {
+            padding: 8px 15px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="messages">
+        <div class="msg me">Sure! I'll send the file now.</div>
+        <div class="msg other">Can you send the document?</div>
+        <div class="msg me">Hi! What do you need?</div>
+        <div class="msg other">Hello!</div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" placeholder="Type a message…">
+        <button>Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>

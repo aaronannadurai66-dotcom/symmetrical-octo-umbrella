@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pricing Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .pricing-section {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1;
+            max-width: 350px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 36px;
+            color: #4e79ff;
+            margin: 20px 0;
+        }
+
+        .features {
+            text-align: left;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .card button {
+            background: #4e79ff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+       
+        @media (max-width: 800px) {
+            .pricing-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Pricing</h1>
+
+    <div class="pricing-section">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <div class="price">₹499</div>
+            <div class="features">
+                • 5 Projects<br>
+                • Basic Support<br>
+                • Access to Community<br>
+            </div>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h2>Standard</h2>
+            <div class="price">₹999</div>
+            <div class="features">
+                • 10 Projects<br>
+                • Priority Support<br>
+                • Monthly Reports<br>
+            </div>
+            <button>Choose Plan</button>
+        </div>
+
+        <div class="card">
+            <h2>Premium</h2>
+            <div class="price">₹1499</div>
+            <div class="features">
+                • Unlimited Projects<br>
+                • 24/7 Support<br>
+                • Advanced Tools<br>
+            </div>
+            <button>Choose Plan</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

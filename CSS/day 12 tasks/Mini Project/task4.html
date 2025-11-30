@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Toolbar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .toolbar {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border: 1px solid #ddd;
+        }
+
+        
+        .filters select {
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        
+        .search {
+            margin-left: auto; 
+            display: flex;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .search input {
+            width: 60%;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+       
+        .actions {
+            margin-left: auto; 
+            display: flex;
+            gap: 10px;
+        }
+
+        .actions button {
+            padding: 6px 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="toolbar">
+
+    
+    <div class="filters">
+        <select>
+            <option>All Status</option>
+            <option>Active</option>
+            <option>Pending</option>
+            <option>Completed</option>
+        </select>
+
+        <select>
+            <option>Category</option>
+            <option>Finance</option>
+            <option>Sales</option>
+            <option>Marketing</option>
+        </select>
+    </div>
+
+  
+    <div class="search">
+        <input type="text" placeholder="Search...">
+    </div>
+
+   
+    <div class="actions">
+        <button>Add</button>
+        <button>Export</button>
+    </div>
+
+</div>
+
+</body>
+</html>
