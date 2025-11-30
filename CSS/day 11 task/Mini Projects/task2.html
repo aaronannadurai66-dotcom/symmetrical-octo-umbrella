@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Product Cards</title>
+
+    <style>
+        /* Container */
+        .product-container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* Clearfix */
+        .product-container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        /* Product Card */
+        .card {
+            width: 30%;
+            float: left;
+            margin: 1.66%;
+            background: #f7f7f7;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .card .price {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="product-container">
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product 1</h3>
+            <p>High-quality item with great features.</p>
+            <div class="price">₹899</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product 2</h3>
+            <p>Durable and stylish — best seller!</p>
+            <div class="price">₹1,299</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Product 3</h3>
+            <p>Perfect for everyday use. Reliable choice.</p>
+            <div class="price">₹499</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

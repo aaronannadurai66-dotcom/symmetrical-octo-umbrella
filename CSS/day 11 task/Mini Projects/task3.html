@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+       
+        .card-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+       
+        .card {
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: calc(33.33% - 20px); 
+            box-sizing: border-box;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        @media (max-width: 800px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-row">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Card One</h3>
+            <p>Simple and clean layout using Flexbox.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Card Two</h3>
+            <p>Equal spacing using gap + space-between.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="">
+            <h3>Card Three</h3>
+            <p>Fully responsive with media queries.</p>
+        </div>
+    </div>
+
+</body>
+</html>

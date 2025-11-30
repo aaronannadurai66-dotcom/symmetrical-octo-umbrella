@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice task</title>
+
+    <style>
+        
+        .block {
+            width: 100%;
+            background: #4e79ff;
+            color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .inline {
+            display: inline;
+            background: yellow;
+            padding: 5px;
+        }
+
+        
+        .float-box img {
+            float: left;
+            width: 120px;
+            margin-right: 15px;
+        }
+        .float-box {
+            margin-bottom: 30px;
+        }
+
+      
+        .flex-even {
+            display: flex;
+            justify-content: space-evenly;
+            background: #e4e4e4;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        .flex-even div {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+     
+        .flex-align {
+            display: flex;
+            height: 120px;
+            background: #ffe5c4;
+            padding: 10px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .flex-align div {
+            background: #ffb26a;
+            padding: 10px;
+        }
+        .special {
+            align-self: flex-end; 
+        }
+
+        .grid-box {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            background: #d6f7d4;
+            padding: 15px;
+        }
+        .grid-box div {
+            background: #9de89b;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>1. Block Element (full width) + Inline Element</h2>
+    <div class="block">
+        This is a block element that spans full width. 
+        <span class="inline">This is inline beside text.</span>
+    </div>
+
+    <h2>2. Float Image Left and Wrap Text</h2>
+    <div class="float-box">
+        <img src="https://via.placeholder.com/120" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, odit libero. 
+        Ipsum perspiciatis deleniti eos. Id molestias, sunt exercitationem laudantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <h2>3. Flex Container with Items Spaced Evenly</h2>
+    <div class="flex-even">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <h2>4. Flex Item with Own Alignment (align-self)</h2>
+    <div class="flex-align">
+        <div>Normal 1</div>
+        <div class="special">Aligned Bottom</div>
+        <div>Normal 2</div>
+    </div>
+
+    <h2>5. 2-Column Grid (1fr 2fr)</h2>
+    <div class="grid-box">
+        <div>Column 1</div>
+        <div>Column 2 (wider)</div>
+    </div>
+
+</body>
+</html>
