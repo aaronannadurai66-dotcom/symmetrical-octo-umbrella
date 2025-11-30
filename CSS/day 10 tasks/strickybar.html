@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sticky Navbar */
+        nav{
+            position: sticky;
+            top: 0;
+            background: #333;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+        }
+
+        nav a:hover{
+            color: #ffcc00;
+        }
+
+        /* Dummy content */
+        section{
+            padding: 40px;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Scroll content -->
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, vel!</p>
+    </section>
+
+</body>
+</html>

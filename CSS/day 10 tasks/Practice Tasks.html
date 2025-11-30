@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task</title>
+
+    <style>
+        /* 4 Boxes with Different Color Formats */
+        .box-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .box {
+            width: 120px;
+            height: 120px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .box1 { background-color: red; }              /*  name */
+        .box2 { background-color: #3498db; }          /* about me color */
+        .box3 { background-color: rgb(46, 204, 113);} /* football club format */
+        .box4 { background-color: hsl(48, 89%, 50%);} /* psg format */
+
+        /* Linear Gradient Section */
+        .gradient-section {
+            background: linear-gradient(to right, purple, pink);
+            padding: 40px;
+            color: white;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Styled Paragraph */
+        .custom-para {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+        }
+
+        /* Heading with underline, uppercase, shadow */
+        h2 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-shadow: 2px 2px 5px gray;
+            margin-bottom: 40px;
+        }
+
+        /* Fixed element bottom-right */
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Styled Heading</h2>
+
+    <!-- Boxes Section -->
+    <div class="box-container">
+        <div class="box box1">name </div>
+        <div class="box box2">about me</div>
+        <div class="box box3">football club</div>
+        <div class="box box4">psg</div>
+    </div>
+
+    <!-- Gradient Section -->
+    <section class="gradient-section">
+       the background of this section is a linear gradient going from purple to pink.
+    </section>
+
+    <!-- Styled Paragraph -->
+    <p class="custom-para">
+        This is a sample paragraph that demonstrates custom font family, size, line height, and letter spacing. The text is designed to be easily readable and visually appealing.  
+    </p>
+
+    <!-- Fixed Element -->
+    <div class="fixed-box">
+        Fixed Box
+    </div>
+
+</body>
+</html>
