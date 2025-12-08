@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Hero Section</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1200&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+
+.hero a {
+    background: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 90vh;
+        padding: 30px;
+    }
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Experience the Future</h1>
+    <p>Discover modern, fast, and beautifully responsive web design for all screen sizes.</p>
+    <a href="#">Get Started</a>
+</section>
+
+</body>
+</html>

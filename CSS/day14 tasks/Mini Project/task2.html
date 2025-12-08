@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Services</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+
+
+.services {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<section class="services">
+
+    <div class="service-card">
+        <h2>Web Design</h2>
+        <p>Modern, responsive layouts that look great on all devices.</p>
+    </div>
+
+    <div class="service-card">
+        <h2>Development</h2>
+        <p>Fast, clean, and scalable code built for performance.</p>
+    </div>
+
+    <div class="service-card">
+        <h2>SEO Optimization</h2>
+        <p>Increase visibility and rank higher on search engines.</p>
+    </div>
+
+</section>
+
+</body>
+</html>
