@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Photo Gallery</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: #f2f2f2;
+    }
+
+    .gallery-section{
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .gallery-section h2{
+        text-align: center;
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+
+    .gallery{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .gallery img:hover{
+        transform: scale(1.04);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+</style>
+
+</head>
+<body>
+
+<section class="gallery-section">
+    <h2>Photo Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fc4?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&w=800" alt="">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&w=800" alt="">
+    </div>
+</section>
+
+</body>
+</html>

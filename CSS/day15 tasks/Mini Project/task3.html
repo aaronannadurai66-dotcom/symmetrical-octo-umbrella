@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Pricing Table</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .pricing{
+        padding: 60px 20px;
+        background: #f7f7f7;
+        text-align: center;
+    }
+
+    .pricing h2{
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .pricing-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .pricing-card{
+        background: #fff;
+        padding: 35px 25px;
+        border-radius: 12px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .pricing-card:hover{
+        transform: translateY(-8px);
+        border-color: #4CAF50;
+    }
+
+    .pricing-title{
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .price{
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    .features{
+        text-align: left;
+        margin: 20px 0;
+    }
+
+    .features p{
+        margin: 8px 0;
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    .btn{
+        display: inline-block;
+        padding: 12px 25px;
+        background: #4CAF50;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .btn:hover{
+        background: #43a047;
+    }
+
+   
+    @media(max-width: 900px){
+        .pricing-container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width: 600px){
+        .pricing-container{
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<section class="pricing">
+    <h2>Pricing Plans</h2>
+
+    <div class="pricing-container">
+
+        <div class="pricing-card">
+            <div class="pricing-title">Basic</div>
+            <div class="price">Rs.9/mo</div>
+            <div class="features">
+                <p>✔ 1 Website</p>
+                <p>✔ Basic Support</p>
+                <p>✔ 10GB Storage</p>
+            </div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="pricing-title">Standard</div>
+            <div class="price">Rs.19/mo</div>
+            <div class="features">
+                <p>✔ 5 Websites</p>
+                <p>✔ Priority Support</p>
+                <p>✔ 50GB Storage</p>
+            </div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="pricing-title">Premium</div>
+            <div class="price">Rs.39/mo</div>
+            <div class="features">
+                <p>✔ Unlimited Websites</p>
+                <p>✔ 24/7 Support</p>
+                <p>✔ 200GB Storage</p>
+            </div>
+            <a href="#" class="btn">Choose Plan</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
