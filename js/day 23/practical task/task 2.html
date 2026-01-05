@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Tracker</title>
+</head>
+<body>
+
+  <h2>Keyboard Tracker</h2>
+  <p>Press any key and see the details below:</p>
+
+  <p id="keyInfo">Key: - | Key Code: -</p>
+
+  <script>
+    document.addEventListener("keydown", function(event) {
+      const keyInfo = document.getElementById("keyInfo");
+      keyInfo.textContent = `Key: ${event.key} | Key Code: ${event.keyCode}`;
+    });
+  </script>
+
+</body>
+</html>

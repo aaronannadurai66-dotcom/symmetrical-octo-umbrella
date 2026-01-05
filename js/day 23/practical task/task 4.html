@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation System</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Form Validation Example</h2>
+
+  <form id="myForm">
+    <label>
+      Name: <input type="text" id="name" />
+      <span id="nameError" class="error"></span>
+    </label>
+    <br><br>
+    <label>
+      Email: <input type="email" id="email" />
+      <span id="emailError" class="error"></span>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myForm");
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent page refresh
+
+      // Reset errors
+      nameError.textContent = "";
+      emailError.textContent = "";
+
+      let valid = true;
+
+      if (nameInput.value.trim() === "") {
+        nameError.textContent = "Name is required.";
+        valid = false;
+      }
+
+      if (emailInput.value.trim() === "") {
+        emailError.textContent = "Email is required.";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("Form submitted successfully!");
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>

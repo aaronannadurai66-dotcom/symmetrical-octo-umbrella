@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Event Playground</title>
+ 
+</head>
+<body>
+
+  <h2>Mouse Event Playground</h2>
+
+  <div id="box">Interact with me!</div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    // Change color on click
+    box.addEventListener("click", function() {
+      box.style.backgroundColor = "lightgreen";
+      box.textContent = "Clicked!";
+    });
+
+    // Change color on double click
+    box.addEventListener("dblclick", function() {
+      box.style.backgroundColor = "lightcoral";
+      box.textContent = "Double Clicked!";
+    });
+
+    // Change color on mouseover
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "lightblue";
+      box.textContent = "Mouse Over!";
+    });
+
+    // Optional: Reset text and color when mouse leaves
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "lightgray";
+      box.textContent = "Interact with me!";
+    });
+  </script>
+
+</body>
+</html>
