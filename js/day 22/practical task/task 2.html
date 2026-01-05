@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Text Update</title>
+</head>
+<body>
+
+  <h2>Live Text Update</h2>
+
+  <input type="text" id="inputBox" placeholder="Type here..." />
+  <p id="liveText"></p>
+
+  <script>
+    document.getElementById("inputBox").addEventListener("input", function () {
+      document.getElementById("liveText").textContent = this.value;
+    });
+  </script>
+
+</body>
+</html>

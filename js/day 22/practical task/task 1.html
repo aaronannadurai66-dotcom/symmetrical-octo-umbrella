@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark Mode Toggle</title>
+</head>
+<body>
+
+  <h1>Dark Mode Example</h1>
+  <p>Click the button to toggle dark mode.</p>
+
+  <button id="darkModeBtn">Toggle Dark Mode</button>
+
+  <script>
+    const btn = document.getElementById("darkModeBtn");
+
+    btn.addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+    });
+
+    // Simple dark mode styles
+    const style = document.createElement("style");
+    style.textContent = `
+      body.dark {
+        background-color: #blue;
+        color: #blue;
+      }
+      button {
+        padding: 10px;
+        margin-top: 10px;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+
+</body>
+</html>

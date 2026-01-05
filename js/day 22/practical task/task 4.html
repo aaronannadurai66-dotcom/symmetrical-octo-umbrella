@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Color Changer</title>
+</head>
+<body>
+
+  <h2>Change Button Colors</h2>
+
+  <button class="colorBtn" data-color="red">Red</button>
+  <button class="colorBtn" data-color="green">Green</button>
+  <button class="colorBtn" data-color="blue">Blue</button>
+  <button class="colorBtn" data-color="orange">Orange</button>
+
+  <script>
+    const buttons = document.querySelectorAll(".colorBtn");
+
+    buttons.forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        btn.style.backgroundColor = btn.getAttribute("data-color");
+        btn.style.color = "white"; // optional for visibility
+      });
+    });
+  </script>
+
+</body>
+</html>

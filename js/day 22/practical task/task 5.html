@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>innerHTML Example</title>
+</head>
+<body>
+
+  <h2>Dynamic HTML Content</h2>
+
+  <button id="insertBtn">Insert Formatted Text</button>
+  <div id="content"></div>
+
+  <script>
+    const btn = document.getElementById("insertBtn");
+    const contentDiv = document.getElementById("content");
+
+    btn.addEventListener("click", function() {
+      contentDiv.innerHTML = "<b>Bold Text</b> and <i>Italic Text</i> inserted dynamically!";
+    });
+  </script>
+
+</body>
+</html>
