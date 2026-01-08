@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation Example</title>
+</head>
+<body>
+
+<h2>Get Current Location</h2>
+
+<button onclick="getLocation()">Show Location</button>
+
+<p id="result"></p>
+
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            document.getElementById("result").textContent =
+                "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        document.getElementById("result").innerHTML =
+            "Latitude: " + position.coords.latitude + "<br>" +
+            "Longitude: " + position.coords.longitude;
+    }
+
+    function showError() {
+        document.getElementById("result").textContent =
+            "Unable to retrieve location.";
+    }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation Example</title>
+</head>
+<body>
+
+<h2>Get Current Location</h2>
+
+<button onclick="getLocation()">Show Location</button>
+
+<p id="result"></p>
+
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            document.getElementById("result").textContent =
+                "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        document.getElementById("result").innerHTML =
+            "Latitude: " + position.coords.latitude + "<br>" +
+            "Longitude: " + position.coords.longitude;
+    }
+
+    function showError() {
+        document.getElementById("result").textContent =
+            "Unable to retrieve location.";
+    }
+</script>
+
+</body>
+</html>

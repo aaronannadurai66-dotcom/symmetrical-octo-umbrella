@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retrieve Saved Data</title>
+</head>
+<body>
+
+<h2>Stored User Name</h2>
+
+<input type="text" id="username" placeholder="Enter name">
+<p id="display"></p>
+
+<script>
+    // Retrieve data when page loads
+    const savedName = localStorage.getItem("username");
+
+    if (savedName) {
+        document.getElementById("username").value = savedName;
+        document.getElementById("display").textContent = "Welcome back, " + savedName;
+    } else {
+        document.getElementById("display").textContent = "No saved data found.";
+    }
+</script>
+
+</body>
+</html>
