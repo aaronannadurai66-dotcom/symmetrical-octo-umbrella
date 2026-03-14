@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function loadScript(src, callback) {
+            let script = document.createElement('script');
+            script.src = src;
+
+            script.onload = () => callback(null, script);
+            script.onerror = () => callback(new Error(`Script load error for ${src}`));
+
+            document.head.append(script);
+        }
+        loadScript('script1.js', function(error, script) {
+            if (error) {
+                console.error(error);
+            } else {
+                console.log(`${script.src} is loaded!`);
+                loadScript('script2.js', function(error, script) {
+                    if (error) {
+                        console.error(error);
+                    } else {
+                        console.log(`${script.src} is loaded!`);
+                    }
+                });
+            }
+            
+        });
+
+
+
+        {
+            const person = {
+                name: 'Aaron',
+                age: 23,
+                city: 'New York'
+         
+           };
+        }
+        {
+            const person = {
+                name: 'Mary',
+                age: 25,
+                city: 'Boston'
+         
+           };
+        }
+
+
+
+
+        const promise = new Promise(function(resolve, reject) {
+            // the function is executed automatically when the promise is constructed
+
+            // after 1 second signal that the job is done with the result "done"
+            setTimeout(() => resolve("done"), 1000);
+        });
+
+        
+
+    </script>
+
+
+
+
+
+</body>
+</html>

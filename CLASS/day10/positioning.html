@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        .box{
+            position: static;
+            width: 150px;
+            height: 150px;
+            
+            background-color: lightcoral;
+            margin: 20px;
+            top: 50px;
+            
+        }
+        .rr{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            margin: 20px;
+            top: 30px;
+            left: 20px;
+
+         
+        }
+        .parent{
+           
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            margin: 50px;
+             position: relative;
+        }
+
+        .child{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            
+        }
+        .fixed{
+            position: fixed;
+            
+            left: 10px;
+            padding: 10px 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header{
+            position: sticky;
+            top: 0;
+            background-color: darkslategray;
+            color: rgb(129, 24, 24);
+            padding: 10px;
+            
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">static box</div>
+    <div class="rr">relative</div>
+    <div class="parent">
+        <div class="child">absolute</div>
+    </div>
+
+
+    <button class="fixed">done</button>
+
+
+
+    <header>stricky bar </header>
+    <p style="height: 500px;background-color: aqua;">scoll down</p>
+
+
+
+
+    
+    
+</body>
+</html>

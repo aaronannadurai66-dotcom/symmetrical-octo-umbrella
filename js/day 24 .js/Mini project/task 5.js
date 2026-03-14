@@ -32,7 +32,7 @@ console.log(calculateTotalFixed(100, 2)); // 180
 // Goal: Check if number is even
 
 function isEven(num) {
-    if (num % 2 = 0) { // ❌ logical mistake
+    if (num % 2 === 0) { // ❌ logical mistake
         return true;
     } else {
         return false;

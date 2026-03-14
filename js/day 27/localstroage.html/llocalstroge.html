@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="name">
+    <button onclick="savedata()">Save Name</button>     
+    <button onclick="showdata()">Show Name</button>
+    <button onclick="removedata()">Remove Name</button> 
+
+    <p id="result"></p>
+
+
+    <script>
+        function savedata() {
+            let name = document.getElementById('name').value;
+            localStorage.setItem('name', name);
+            alert('Name saved!');
+        }
+        localStorage.setItem('name', 'Aaron');   
+        function showdata() {
+            let name = localStorage.getItem('name');
+            document.getElementById('result').innerText = name ? name : 'No name found';
+            alert('savebtn clicked');
+        }
+        function removedata() {
+            localStorage.removeItem('name');
+            alert('Name removed!');
+        }
+        {
+            const person = {
+                name: 'John',
+                age: 30,
+                city: 'New York'
+         
+           };
+        }
+
+
+        
+    
+      
+
+
+        
+        
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
